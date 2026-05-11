@@ -8,9 +8,9 @@ import java.util.Optional;
 
 public interface UsuarioRepository  extends JpaRepository<Usuario, Long> {
 
-    boolean existsByRUN(String RUN);
+    boolean existsByrun(String run);
 
-    Optional<Usuario> findByRUN(String RUN);
+    Optional<Usuario> findByrun(String run);
 
 
 

@@ -15,5 +15,5 @@ public class UsuarioResponseDTO {
     private Long idUsuario;
     private String Nombre;
 
-    private String membresia;
+    private String idmembresia;
 }

@@ -24,14 +24,14 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.obtenerUsuarios());
     }
 
-    @GetMapping("/busqueda/{RUN}")
-    public ResponseEntity<UsuarioResponseDTO> obtenerUsuarioRUN(@PathVariable String RUN) {
-        return ResponseEntity.ok(usuarioService.obtenerPorRUN(RUN));
+    @GetMapping("/busqueda/{run}")
+    public ResponseEntity<UsuarioResponseDTO> obtenerUsuarioRUN(@PathVariable String run) {
+        return ResponseEntity.ok(usuarioService.obtenerPorRUN(run));
     }
 
     @PostMapping
-    public ResponseEntity<Usuario> registrarUsuario(@Valid @RequestBody Usuario usuario){
-        Usuario nuevo = usuarioService.registrarUsuario(usuario);
+    public ResponseEntity<UsuarioResponseDTO> registrarUsuario(@Valid @RequestBody UsuarioRequestDTO dto){
+        UsuarioResponseDTO nuevo = usuarioService.agregarUsuario(dto);
         return ResponseEntity.status(201).body(nuevo);
     }
 

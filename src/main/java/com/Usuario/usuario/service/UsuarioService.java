@@ -19,7 +19,7 @@ public class UsuarioService {
     private final UsuarioRepository usuarioRepository;
 
     public UsuarioResponseDTO obtenerPorRUN(String RUN){
-        Usuario usuarioEncontrado = usuarioRepository.findByRUN(RUN)
+        Usuario usuarioEncontrado = usuarioRepository.findByrun(RUN)
                 .orElseThrow(() -> new RuntimeException("No existe un usuario con ese RUN"));
 
         UsuarioResponseDTO dto = new UsuarioResponseDTO();
@@ -27,29 +27,33 @@ public class UsuarioService {
         dto.setNombre(usuarioEncontrado.getNombre());
 
         if(usuarioEncontrado.getMembresia() != null){
-            dto.setMembresia(usuarioEncontrado.getMembresia().getNombre_membresia());
+            dto.setIdmembresia(usuarioEncontrado.getMembresia().getNombre_membresia());
         }
 
         return dto;
     }
 
-    public UsuarioRequestDTO agregarUsuario(UsuarioRequestDTO dto){
-        if(usuarioRepository.existsByRUN(dto.getRUN())){
-            throw new RuntimeException("ERROR: Ya existe un socio con el RUN" + dto.getRUN());
+    public UsuarioResponseDTO agregarUsuario(UsuarioRequestDTO dto){
+        if(usuarioRepository.existsByrun(dto.getRun())){
+            throw new RuntimeException("ERROR: Ya existe un socio con el RUN" + dto.getRun());
         }
 
-        Membresia buscarMembresia = membresiaRepository.findById(dto.getIdMembresia())
+        Membresia buscarMembresia = membresiaRepository.findById(dto.getIdmembresia())
                 .orElseThrow(() -> new RuntimeException("Esa id de membresia no existe"));
 
         Usuario nuevoUsuario = new Usuario();
         nuevoUsuario.setNombre(dto.getNombre());
         nuevoUsuario.setCorreo(dto.getCorreo());
-        nuevoUsuario.setRUN(dto.getRUN());
+        nuevoUsuario.setRun(dto.getRun());
         nuevoUsuario.setMembresia(buscarMembresia);
 
         usuarioRepository.save(nuevoUsuario);
 
-        return dto;
+        UsuarioResponseDTO respuesta = new UsuarioResponseDTO();
+        respuesta.setIdUsuario(nuevoUsuario.getIdUsuario());
+        respuesta.setNombre(nuevoUsuario.getNombre());
+        respuesta.setIdmembresia(buscarMembresia.getNombre_membresia());
+        return respuesta;
     }
 
 

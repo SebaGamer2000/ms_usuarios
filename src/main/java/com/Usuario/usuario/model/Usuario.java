@@ -17,11 +17,11 @@ public class Usuario {
     private Long idUsuario;
 
     @Column(nullable = false, length = 50)
-    private String Nombre;
+    private String nombre;
     @Column(nullable = false, length = 50)
-    private String Correo;
+    private String correo;
     @Column(nullable = false, length = 10, unique = true)
-    private String RUN;
+    private String run;
 
     @ManyToOne
     @JoinColumn(name = "id_membresia", nullable = false)
