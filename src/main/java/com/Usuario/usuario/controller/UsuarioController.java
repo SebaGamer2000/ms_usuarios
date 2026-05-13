@@ -1,17 +1,24 @@
 package com.Usuario.usuario.controller;
 
 
+
 import com.Usuario.usuario.dto.UsuarioRequestDTO;
 import com.Usuario.usuario.dto.UsuarioResponseDTO;
+import com.Usuario.usuario.dto.actualizarDTO;
 import com.Usuario.usuario.model.Usuario;
+
 import com.Usuario.usuario.service.UsuarioService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.web.server.servlet.context.ServletComponentScan;
+
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 @RestController
 @RequestMapping("/gym/socios")
@@ -19,33 +26,67 @@ import java.util.List;
 public class UsuarioController {
     private final UsuarioService usuarioService;
 
+
+    // Listar todos los usuarios registrados
     @GetMapping("/listarsocios")
     public ResponseEntity<List<Usuario>> obtenerUsuarios(){
         return ResponseEntity.ok(usuarioService.obtenerUsuarios());
     }
 
+    // Buscar usuario por RUN
     @GetMapping("/busqueda/{run}")
-    public ResponseEntity<UsuarioResponseDTO> obtenerUsuarioRUN(@PathVariable String run) {
+    public ResponseEntity<?> obtenerUsuarioRUN(@PathVariable String run) {
+        if(usuarioService.buscarRun(run).isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("Mensaje:","No se encontro ningun socio con ese run asociado"));
+        }
+
         return ResponseEntity.ok(usuarioService.obtenerPorRUN(run));
     }
 
+    // Agregar usuarios
     @PostMapping
     public ResponseEntity<UsuarioResponseDTO> registrarUsuario(@Valid @RequestBody UsuarioRequestDTO dto){
         UsuarioResponseDTO nuevo = usuarioService.agregarUsuario(dto);
         return ResponseEntity.status(201).body(nuevo);
     }
 
-    // Actualizar Datos usuario
-    @PutMapping("/updateuser/{idUsuario}")
-
-    // Borrar usuario
-    @DeleteMapping("/deleteuser/{idUsuario}")
-    public ResponseEntity<Void> borrarUsuario(@PathVariable Long idUsuario){
-        if(usuarioService.obtenerPorId(idUsuario).isEmpty()){
-            return ResponseEntity.notFound().build();
+    // Borrar usuarios
+    @DeleteMapping("/eliminarsocio/{run}")
+    public ResponseEntity<?> borrarUsuario(@PathVariable String run){
+        if(usuarioService.buscarRun(run).isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("Mensaje","No se encontró ningun run asociado a algún socio."));
         }
-        usuarioService.eliminarUsuario(idUsuario);
-        return ResponseEntity.noContent().build();
+
+        usuarioService.eliminarUsuario(run);
+
+        Map<String,String> respuesta = new HashMap<>();
+        respuesta.put("Mensaje","Socio eliminado correctamente");
+        respuesta.put("run",run);
+        respuesta.put("status","success");
+
+        return ResponseEntity.ok(respuesta);
+    }
+
+    // Actualizar usuarios
+    @PutMapping("/actualizar/{run}")
+    public ResponseEntity<?> actualizarUsuario(@PathVariable String run, @Valid @RequestBody actualizarDTO dto){
+        if(usuarioService.buscarRun(run).isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("Mensaje","No existe ningún socio con ese run."));
+        }
+
+        usuarioService.actualizarUsuario(run,dto);
+                //.map(ResponseEntity::ok)
+                //.orElse(ResponseEntity.notFound().build());
+
+        Map<String,String> respuesta = new HashMap<>();
+        respuesta.put("Mensaje","Socio modificado correctamente");
+        respuesta.put("run",run);
+
+
+        return ResponseEntity.ok(respuesta);
     }
 }
 
