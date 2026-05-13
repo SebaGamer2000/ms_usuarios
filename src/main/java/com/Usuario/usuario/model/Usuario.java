@@ -22,6 +22,8 @@ public class Usuario {
     private String correo;
     @Column(nullable = false, length = 10, unique = true)
     private String run;
+    @Column(nullable = false)
+    private boolean pagoAlDia = false;
 
     @ManyToOne
     @JoinColumn(name = "id_membresia", nullable = false)
