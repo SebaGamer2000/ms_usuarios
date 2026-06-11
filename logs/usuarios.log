@@ -1,0 +1,309 @@
+2026-05-17T19:29:23.032-04:00  INFO 17976 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Starting UsuarioApplication using Java 21.0.10 with PID 17976 (C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios\target\classes started by sebit in C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios)
+2026-05-17T19:29:23.040-04:00 DEBUG 17976 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-17T19:29:23.042-04:00  INFO 17976 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T19:29:28.895-04:00  INFO 17976 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T19:29:29.553-04:00  INFO 17976 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 595 ms. Found 1 JPA repository interface.
+2026-05-17T19:29:31.174-04:00  INFO 17976 --- [usuario] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b9a3f7b-ac53-3890-849c-8a15f5421ce3
+2026-05-17T19:29:33.191-04:00  INFO 17976 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-05-17T19:29:33.714-04:00  INFO 17976 --- [usuario] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 10407 ms
+2026-05-17T19:29:36.150-04:00  INFO 17976 --- [usuario] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-17T19:29:36.531-04:00  INFO 17976 --- [usuario] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-17T19:29:39.668-04:00  INFO 17976 --- [usuario] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T19:29:39.773-04:00  INFO 17976 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T19:29:40.330-04:00  INFO 17976 --- [usuario] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4687366b
+2026-05-17T19:29:40.336-04:00  INFO 17976 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T19:29:40.476-04:00  WARN 17976 --- [usuario] [main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T19:29:40.489-04:00  WARN 17976 --- [usuario] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T19:29:40.561-04:00  INFO 17976 --- [usuario] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/usuarios_bd]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: usuarios_bd/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T19:30:48.974-04:00  INFO 7236 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Starting UsuarioApplication using Java 21.0.10 with PID 7236 (C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios\target\classes started by sebit in C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios)
+2026-05-17T19:30:48.984-04:00 DEBUG 7236 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-17T19:30:48.987-04:00  INFO 7236 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T19:30:52.498-04:00  INFO 7236 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T19:30:53.186-04:00  INFO 7236 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 651 ms. Found 1 JPA repository interface.
+2026-05-17T19:30:54.346-04:00  INFO 7236 --- [usuario] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b9a3f7b-ac53-3890-849c-8a15f5421ce3
+2026-05-17T19:30:55.947-04:00  INFO 7236 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-05-17T19:30:56.001-04:00  INFO 7236 --- [usuario] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-17T19:30:56.002-04:00  INFO 7236 --- [usuario] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-17T19:30:56.279-04:00  INFO 7236 --- [usuario] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 7098 ms
+2026-05-17T19:30:57.091-04:00  INFO 7236 --- [usuario] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-17T19:30:57.391-04:00  INFO 7236 --- [usuario] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-17T19:30:59.406-04:00  INFO 7236 --- [usuario] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T19:30:59.502-04:00  INFO 7236 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T19:31:00.012-04:00  INFO 7236 --- [usuario] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bab804f
+2026-05-17T19:31:00.020-04:00  INFO 7236 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T19:31:00.142-04:00  WARN 7236 --- [usuario] [main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T19:31:00.151-04:00  WARN 7236 --- [usuario] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T19:31:00.206-04:00  INFO 7236 --- [usuario] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/usuarios_bd]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: usuarios_bd/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T19:31:02.692-04:00  INFO 7236 --- [usuario] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-17T19:31:02.941-04:00  INFO 7236 --- [usuario] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T19:31:03.280-04:00  INFO 7236 --- [usuario] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-17T19:31:04.621-04:00  WARN 7236 --- [usuario] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-17T19:31:05.021-04:00  WARN 7236 --- [usuario] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-05-17T19:31:05.207-04:00  WARN 7236 --- [usuario] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-05-17T19:31:05.351-04:00  INFO 7236 --- [usuario] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-05-17T19:31:07.494-04:00  INFO 7236 --- [usuario] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-05-17T19:31:07.715-04:00  WARN 7236 --- [usuario] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-17T19:31:07.975-04:00  INFO 7236 --- [usuario] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-17T19:31:08.041-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-17T19:31:08.050-04:00  INFO 7236 --- [usuario] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:31:08.074-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T19:31:08.075-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T19:31:08.075-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T19:31:08.075-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T19:31:08.075-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T19:31:08.075-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-17T19:31:08.076-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T19:31:10.904-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T19:31:10.906-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-17T19:31:10.912-04:00  INFO 7236 --- [usuario] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-17T19:31:10.918-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779060670916 with initial instances count: 0
+2026-05-17T19:31:10.926-04:00  INFO 7236 --- [usuario] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USUARIO with eureka with status UP
+2026-05-17T19:31:10.929-04:00  INFO 7236 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779060670929, current=UP, previous=STARTING]
+2026-05-17T19:31:10.934-04:00  INFO 7236 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081: registering service...
+2026-05-17T19:31:11.012-04:00  INFO 7236 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-05-17T19:31:11.018-04:00  INFO 7236 --- [usuario] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-05-17T19:31:11.065-04:00  INFO 7236 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Started UsuarioApplication in 24.222 seconds (process running for 27.023)
+2026-05-17T19:31:11.601-04:00  INFO 7236 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - registration status: 204
+2026-05-17T19:31:12.854-04:00  INFO 7236 --- [usuario] [main] c.U.usuario.config.DataInitializer       : Datos cargados
+2026-05-17T19:31:40.923-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T19:31:40.945-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T19:31:40.946-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T19:31:40.946-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T19:31:40.946-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T19:31:40.947-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-05-17T19:31:40.947-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T19:31:41.663-04:00  INFO 7236 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T19:31:48.596-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-17T19:31:48.602-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-17T19:31:48.646-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2026-05-17T19:34:21.551-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-8] c.U.usuario.service.UsuarioService       : Creando usuario
+2026-05-17T19:34:23.527-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-8] c.U.usuario.service.UsuarioService       : Usuario creado exitosamente
+2026-05-17T19:36:08.135-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:41:08.261-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:46:08.395-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:51:08.437-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:56:08.528-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:59:47.050-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-9] c.U.usuario.service.UsuarioService       : Creando usuario
+2026-05-17T19:59:47.229-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-9] c.U.usuario.service.UsuarioService       : Usuario creado exitosamente
+2026-05-17T20:01:08.550-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:02:22.609-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-6] c.U.usuario.service.UsuarioService       : Actualizando socio
+2026-05-17T20:02:48.440-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-10] c.U.usuario.service.UsuarioService       : Actualizando socio
+2026-05-17T20:02:48.491-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-10] c.U.usuario.service.UsuarioService       : Socio actualizado correctamente
+2026-05-17T20:03:42.841-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-5] c.U.usuario.service.UsuarioService       : Actualizando socio
+2026-05-17T20:03:42.856-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-5] c.U.usuario.service.UsuarioService       : Socio actualizado correctamente
+2026-05-17T20:04:45.232-04:00  INFO 7236 --- [usuario] [http-nio-8081-exec-10] c.U.usuario.service.UsuarioService       : Eliminando usuario
+2026-05-17T20:06:08.561-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:11:08.586-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:16:08.609-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:21:08.635-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:26:08.661-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:31:08.693-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:36:08.726-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:41:08.738-04:00  INFO 7236 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:44:02.128-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USUARIO with eureka with status DOWN
+2026-05-17T20:44:02.214-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779065042214, current=DOWN, previous=UP]
+2026-05-17T20:44:02.220-04:00  INFO 7236 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081: registering service...
+2026-05-17T20:44:02.569-04:00  INFO 7236 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - registration status: 204
+2026-05-17T20:44:03.046-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-17T20:44:03.243-04:00  INFO 7236 --- [usuario] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-17T20:44:06.347-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T20:44:06.585-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T20:44:06.643-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-17T20:44:06.658-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-17T20:44:09.681-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-17T20:44:09.746-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - deregister  status: 200
+2026-05-17T20:44:09.749-04:00  INFO 7236 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-05-17T21:38:17.448-04:00  INFO 20396 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Starting UsuarioApplication using Java 21.0.10 with PID 20396 (C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios\target\classes started by sebit in C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios)
+2026-05-17T21:38:17.459-04:00 DEBUG 20396 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-17T21:38:17.462-04:00  INFO 20396 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T21:39:14.323-04:00  INFO 10916 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Starting UsuarioApplication using Java 21.0.10 with PID 10916 (C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios\target\classes started by sebit in C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios)
+2026-05-17T21:39:14.328-04:00 DEBUG 10916 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-17T21:39:14.330-04:00  INFO 10916 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T21:39:16.001-04:00  INFO 10916 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T21:39:16.329-04:00  INFO 10916 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 310 ms. Found 1 JPA repository interface.
+2026-05-17T21:39:17.057-04:00  INFO 10916 --- [usuario] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b9a3f7b-ac53-3890-849c-8a15f5421ce3
+2026-05-17T21:39:17.904-04:00  INFO 10916 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-05-17T21:39:17.933-04:00  INFO 10916 --- [usuario] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-17T21:39:17.934-04:00  INFO 10916 --- [usuario] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-17T21:39:18.088-04:00  INFO 10916 --- [usuario] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3666 ms
+2026-05-17T21:39:18.463-04:00  INFO 10916 --- [usuario] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-17T21:39:18.581-04:00  INFO 10916 --- [usuario] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-17T21:39:19.441-04:00  INFO 10916 --- [usuario] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T21:39:19.495-04:00  INFO 10916 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T21:39:19.768-04:00  INFO 10916 --- [usuario] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62a81453
+2026-05-17T21:39:19.772-04:00  INFO 10916 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T21:39:19.830-04:00  WARN 10916 --- [usuario] [main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T21:39:19.835-04:00  WARN 10916 --- [usuario] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T21:39:19.860-04:00  INFO 10916 --- [usuario] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/usuarios_bd]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: usuarios_bd/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T21:39:21.065-04:00  INFO 10916 --- [usuario] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-17T21:39:21.203-04:00  INFO 10916 --- [usuario] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T21:39:21.327-04:00  INFO 10916 --- [usuario] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-17T21:39:21.839-04:00  WARN 10916 --- [usuario] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-17T21:39:22.022-04:00  WARN 10916 --- [usuario] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-05-17T21:39:22.141-04:00  WARN 10916 --- [usuario] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-05-17T21:39:22.237-04:00  INFO 10916 --- [usuario] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-05-17T21:39:23.326-04:00  INFO 10916 --- [usuario] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-05-17T21:39:23.441-04:00  WARN 10916 --- [usuario] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-17T21:39:23.519-04:00  INFO 10916 --- [usuario] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-17T21:39:23.590-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-17T21:39:23.599-04:00  INFO 10916 --- [usuario] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T21:39:23.615-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T21:39:23.615-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T21:39:23.615-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T21:39:23.615-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T21:39:23.616-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T21:39:23.616-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-17T21:39:23.616-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T21:39:24.196-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T21:39:24.197-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-17T21:39:24.200-04:00  INFO 10916 --- [usuario] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-17T21:39:24.203-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779068364201 with initial instances count: 0
+2026-05-17T21:39:24.209-04:00  INFO 10916 --- [usuario] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USUARIO with eureka with status UP
+2026-05-17T21:39:24.210-04:00  INFO 10916 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779068364210, current=UP, previous=STARTING]
+2026-05-17T21:39:24.214-04:00  INFO 10916 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081: registering service...
+2026-05-17T21:39:24.255-04:00  INFO 10916 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-05-17T21:39:24.258-04:00  INFO 10916 --- [usuario] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-05-17T21:39:24.291-04:00  INFO 10916 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Started UsuarioApplication in 10.98 seconds (process running for 12.41)
+2026-05-17T21:39:24.310-04:00  INFO 10916 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - registration status: 204
+2026-05-17T21:39:24.858-04:00  INFO 10916 --- [usuario] [main] c.U.usuario.config.DataInitializer       : Datos cargados
+2026-05-17T21:39:54.205-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T21:39:54.206-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T21:39:54.206-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T21:39:54.206-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T21:39:54.206-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T21:39:54.207-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-05-17T21:39:54.207-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T21:39:54.258-04:00  INFO 10916 --- [usuario] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T21:40:47.549-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-17T21:40:47.550-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-17T21:40:47.551-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-17T21:42:38.275-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-7] c.U.usuario.service.UsuarioService       : Creando usuario
+2026-05-17T21:42:38.457-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-7] c.U.usuario.service.UsuarioService       : Usuario creado exitosamente
+2026-05-17T21:44:23.634-04:00  INFO 10916 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T21:45:29.376-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-8] c.U.usuario.service.UsuarioService       : Actualizando socio
+2026-05-17T21:45:30.855-04:00  INFO 10916 --- [usuario] [http-nio-8081-exec-8] c.U.usuario.service.UsuarioService       : Socio actualizado correctamente
+2026-05-17T21:49:23.645-04:00  INFO 10916 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T21:53:53.639-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USUARIO with eureka with status DOWN
+2026-05-17T21:53:53.647-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779069233647, current=DOWN, previous=UP]
+2026-05-17T21:53:53.649-04:00  INFO 10916 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081: registering service...
+2026-05-17T21:53:53.812-04:00  INFO 10916 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - registration status: 204
+2026-05-17T21:53:53.905-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-17T21:53:53.972-04:00  INFO 10916 --- [usuario] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-17T21:53:56.261-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T21:53:56.304-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T21:53:56.374-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-17T21:53:56.377-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-17T21:53:59.394-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-17T21:53:59.467-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - deregister  status: 200
+2026-05-17T21:53:59.468-04:00  INFO 10916 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-05-17T22:07:17.523-04:00  INFO 15116 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Starting UsuarioApplication using Java 21.0.10 with PID 15116 (C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios\target\classes started by sebit in C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\ms_usuarios)
+2026-05-17T22:07:17.532-04:00 DEBUG 15116 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-17T22:07:17.535-04:00  INFO 15116 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T22:07:20.543-04:00  INFO 15116 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T22:07:21.266-04:00  INFO 15116 --- [usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 639 ms. Found 1 JPA repository interface.
+2026-05-17T22:07:22.849-04:00  INFO 15116 --- [usuario] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b9a3f7b-ac53-3890-849c-8a15f5421ce3
+2026-05-17T22:07:26.010-04:00  INFO 15116 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-05-17T22:07:26.077-04:00  INFO 15116 --- [usuario] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-17T22:07:26.077-04:00  INFO 15116 --- [usuario] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-17T22:07:26.449-04:00  INFO 15116 --- [usuario] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 8736 ms
+2026-05-17T22:07:27.376-04:00  INFO 15116 --- [usuario] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-17T22:07:27.758-04:00  INFO 15116 --- [usuario] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-17T22:07:29.377-04:00  INFO 15116 --- [usuario] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T22:07:29.473-04:00  INFO 15116 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T22:07:29.911-04:00  INFO 15116 --- [usuario] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fb5368e
+2026-05-17T22:07:29.916-04:00  INFO 15116 --- [usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T22:07:30.007-04:00  WARN 15116 --- [usuario] [main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T22:07:30.015-04:00  WARN 15116 --- [usuario] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T22:07:30.050-04:00  INFO 15116 --- [usuario] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/usuarios_bd]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: usuarios_bd/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T22:07:31.859-04:00  INFO 15116 --- [usuario] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-17T22:07:32.059-04:00  INFO 15116 --- [usuario] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T22:07:32.410-04:00  INFO 15116 --- [usuario] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-17T22:07:33.465-04:00  WARN 15116 --- [usuario] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-17T22:07:33.854-04:00  WARN 15116 --- [usuario] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-05-17T22:07:34.179-04:00  WARN 15116 --- [usuario] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-05-17T22:07:34.493-04:00  INFO 15116 --- [usuario] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-05-17T22:07:36.776-04:00  INFO 15116 --- [usuario] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-05-17T22:07:37.001-04:00  WARN 15116 --- [usuario] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-17T22:07:37.154-04:00  INFO 15116 --- [usuario] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-17T22:07:37.283-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-17T22:07:37.296-04:00  INFO 15116 --- [usuario] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T22:07:37.336-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T22:07:37.338-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T22:07:37.339-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T22:07:37.340-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T22:07:37.341-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T22:07:37.341-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-17T22:07:37.341-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T22:07:39.776-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T22:07:39.786-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-17T22:07:39.794-04:00  INFO 15116 --- [usuario] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-17T22:07:39.800-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779070059797 with initial instances count: 1
+2026-05-17T22:07:39.810-04:00  INFO 15116 --- [usuario] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USUARIO with eureka with status UP
+2026-05-17T22:07:39.813-04:00  INFO 15116 --- [usuario] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779070059813, current=UP, previous=STARTING]
+2026-05-17T22:07:39.875-04:00  INFO 15116 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081: registering service...
+2026-05-17T22:07:39.897-04:00  INFO 15116 --- [usuario] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-05-17T22:07:39.900-04:00  INFO 15116 --- [usuario] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-05-17T22:07:40.019-04:00  INFO 15116 --- [usuario] [main] com.Usuario.usuario.UsuarioApplication   : Started UsuarioApplication in 23.904 seconds (process running for 26.447)
+2026-05-17T22:07:40.068-04:00  INFO 15116 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - registration status: 204
+2026-05-17T22:07:41.591-04:00  INFO 15116 --- [usuario] [main] c.U.usuario.config.DataInitializer       : Datos cargados
+2026-05-17T22:10:03.226-04:00  INFO 15116 --- [usuario] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-17T22:10:03.242-04:00  INFO 15116 --- [usuario] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-17T22:10:03.333-04:00  INFO 15116 --- [usuario] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 90 ms
+2026-05-17T22:12:37.362-04:00  INFO 15116 --- [usuario] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T22:13:40.887-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USUARIO with eureka with status DOWN
+2026-05-17T22:13:40.888-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779070420888, current=DOWN, previous=UP]
+2026-05-17T22:13:40.890-04:00  INFO 15116 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081: registering service...
+2026-05-17T22:13:40.903-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-17T22:13:40.908-04:00  INFO 15116 --- [usuario] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - registration status: 204
+2026-05-17T22:13:40.921-04:00  INFO 15116 --- [usuario] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-17T22:13:41.030-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T22:13:41.054-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T22:13:41.086-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-17T22:13:41.089-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-17T22:13:44.092-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-17T22:13:44.113-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIO/LAPTOP-TLGIUAT7:usuario:8081 - deregister  status: 200
+2026-05-17T22:13:44.113-04:00  INFO 15116 --- [usuario] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

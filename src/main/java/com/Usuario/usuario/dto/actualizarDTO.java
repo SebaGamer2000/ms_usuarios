@@ -20,8 +20,8 @@ public class actualizarDTO {
     @NotBlank(message = "El correo es obligatorio")
     private String correo;
 
-    @NotNull(message = "Debe ingresar una id de membresia valida")
-    @Min(1)
-    private Long idmembresia;
+
+    private Long idMembresia;
+
 
 }

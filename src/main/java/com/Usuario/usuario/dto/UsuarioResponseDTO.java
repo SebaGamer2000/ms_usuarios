@@ -12,8 +12,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UsuarioResponseDTO {
+    private Long idUsuario;
     private String nombre;
     private String correo;
     private String run;
-    private String idmembresia;
+    private boolean pagoAlDia;
+    private String nombreMembresia;
 }

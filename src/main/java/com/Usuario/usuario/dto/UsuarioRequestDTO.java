@@ -21,7 +21,4 @@ public class UsuarioRequestDTO {
     @NotNull(message = "El RUN es obligatorio")
     private String run;
 
-    @NotNull(message = "El usuario debe tener una membresia")
-    private Long idmembresia;
-
 }

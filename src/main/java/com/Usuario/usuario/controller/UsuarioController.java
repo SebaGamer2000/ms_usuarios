@@ -34,6 +34,12 @@ public class UsuarioController {
     public ResponseEntity<List<Usuario>> obtenerUsuarios(){
         return ResponseEntity.ok(usuarioService.obtenerUsuarios());
     }
+    @GetMapping("{idUsuario}")
+    public ResponseEntity<UsuarioResponseDTO> findById(@PathVariable Long idUsuario){
+        return usuarioService.findById(idUsuario).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    }
+
+
 
     // Buscar usuario por RUN
     @GetMapping("/busqueda/{run}")
@@ -79,9 +85,9 @@ public class UsuarioController {
                     .body(Map.of("Mensaje","No existe ningún socio con ese run."));
         }
 
-        usuarioService.actualizarUsuario(run,dto);
-                //.map(ResponseEntity::ok)
-                //.orElse(ResponseEntity.notFound().build());
+        usuarioService.actualizarUsuario(run,dto)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
 
         Map<String,String> respuesta = new HashMap<>();
         respuesta.put("Mensaje","Socio modificado correctamente");
@@ -90,7 +96,7 @@ public class UsuarioController {
 
         return ResponseEntity.ok(respuesta);
     }
-
+//Procesar pagos
     @PutMapping("/procesarpago/{run}")
     public ResponseEntity<?> procesarPago(@PathVariable String run){
         Usuario usuario  = usuarioRepository.findByrun(run)
