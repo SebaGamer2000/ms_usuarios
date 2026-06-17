@@ -31,8 +31,20 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/api-docs/**", "/v3/api-docs/**").permitAll()
+                        //.requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/api-docs/**", "/v3/api-docs/**").permitAll()
+                        .requestMatchers(
+                                "/doc/swagger-ui/**",
+                                "/doc/swagger-ui.html",
+                                "/v3/api-docs/**",
+                                "/doc/swagger-ui/index.html",
+                                "/swagger-ui/**",
+                                "/swagger-ui.html",
+                                "/swagger-resources/**",
+                                "/webjars/**"
+                        ).permitAll()
                         .requestMatchers("/auth/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/gym/socios/busqueda/**").permitAll()
+                        .requestMatchers(HttpMethod.PUT, "/gym/socios/procesarpago/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/gym/socios/**").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
                         .requestMatchers(HttpMethod.POST, "/gym/socios/**").hasAuthority("ROLE_ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/gym/socios/**").hasAuthority("ROLE_ADMIN")

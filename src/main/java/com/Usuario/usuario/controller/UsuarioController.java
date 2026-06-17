@@ -2,6 +2,7 @@ package com.Usuario.usuario.controller;
 
 
 
+import com.Usuario.usuario.dto.MembresiaDTO;
 import com.Usuario.usuario.dto.UsuarioRequestDTO;
 import com.Usuario.usuario.dto.UsuarioResponseDTO;
 import com.Usuario.usuario.dto.actualizarDTO;
@@ -109,15 +110,18 @@ public class UsuarioController {
 
         return ResponseEntity.ok(respuesta);
     }
+
+
 //Procesar pagos
     @PutMapping("/procesarpago/{run}")
-    public ResponseEntity<?> procesarPago(@PathVariable String run){
+    public ResponseEntity<?> procesarPago(@PathVariable String run, @RequestBody(required = false) Map<String, String> body){
         Usuario usuario  = usuarioRepository.findByrun(run)
                 .orElseThrow(() -> new RuntimeException("Socio no encontrado"));
 
         usuario.setPagoAlDia(true);
-        usuarioRepository.save(usuario);
+        usuario.setNombreMembresia(body.get("nombreMembresia"));
 
+        usuarioRepository.save(usuario);
         return ResponseEntity.ok("Pago procesado exitosamente");
     }
 }

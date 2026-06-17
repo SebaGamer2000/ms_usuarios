@@ -26,4 +26,6 @@ public class Usuario {
     private boolean pagoAlDia;
     @Column
     private Long idMembresia;
+    @Column
+    private String nombreMembresia;
 }

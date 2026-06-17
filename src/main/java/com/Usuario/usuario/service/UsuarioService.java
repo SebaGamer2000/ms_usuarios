@@ -12,7 +12,9 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
@@ -37,7 +39,8 @@ public class UsuarioService {
                 usuario.getCorreo(),
                 usuario.getRun(),
                 usuario.isPagoAlDia(),
-                obtenerTipoMembresia(usuario.getIdMembresia())
+                usuario.getNombreMembresia()
+
         );
     }
     //Encontrar usuario por ID
@@ -48,9 +51,12 @@ public class UsuarioService {
                 .orElseThrow(() -> new RuntimeException("No existe un usuario con ese RUN"));
 
         UsuarioResponseDTO dto = new UsuarioResponseDTO();
+        dto.setIdUsuario(usuarioEncontrado.getIdUsuario());
         dto.setNombre(usuarioEncontrado.getNombre());
         dto.setCorreo(usuarioEncontrado.getCorreo());
         dto.setRun(usuarioEncontrado.getRun());
+        dto.setPagoAlDia(usuarioEncontrado.isPagoAlDia());
+        dto.setNombreMembresia(usuarioEncontrado.getNombreMembresia());
 
         return dto;
     }
@@ -100,9 +106,6 @@ public class UsuarioService {
                 .block();
         return membresiaDTO != null ? membresiaDTO.getTipoPlan() : null;
     }
-
-
-
 
     // Modificar usuarios
     public Optional<UsuarioResponseDTO> actualizarUsuario(String run, @Valid actualizarDTO dto){
