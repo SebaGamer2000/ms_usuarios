@@ -18,6 +18,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -83,8 +84,8 @@ public class UsuarioService {
     }
 
     // Listar todos los usuarios
-    public List<Usuario> obtenerUsuarios(){
-        return usuarioRepository.findAll();
+    public List<UsuarioResponseDTO> obtenerUsuarios(){
+        return usuarioRepository.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
     // Obtener tipo de membresia

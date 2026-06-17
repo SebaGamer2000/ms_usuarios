@@ -20,6 +20,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
 
 @RestController
 @RequestMapping("/gym/socios")
@@ -31,12 +34,20 @@ public class UsuarioController {
 
     // Listar todos los usuarios registrados
     @GetMapping("/listarsocios")
-    public ResponseEntity<List<Usuario>> obtenerUsuarios(){
-        return ResponseEntity.ok(usuarioService.obtenerUsuarios());
+    public ResponseEntity<List<UsuarioResponseDTO>> obtenerUsuarios(){
+        List<UsuarioResponseDTO> lista = usuarioService.obtenerUsuarios();
+        lista.forEach(dto ->
+                dto.add(linkTo(methodOn(UsuarioController.class).findById(dto.getIdUsuario())).withSelfRel())
+        );
+        return ResponseEntity.ok(lista);
     }
     @GetMapping("{idUsuario}")
     public ResponseEntity<UsuarioResponseDTO> findById(@PathVariable Long idUsuario){
-        return usuarioService.findById(idUsuario).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+        return usuarioService.findById(idUsuario).map(dto -> {
+            dto.add(linkTo(methodOn(UsuarioController.class).findById(idUsuario)).withSelfRel());
+            dto.add(linkTo(methodOn(UsuarioController.class).obtenerUsuarios()).withRel("todos"));
+            return ResponseEntity.ok(dto);
+        }).orElse(ResponseEntity.notFound().build());
     }
 
 
@@ -56,6 +67,8 @@ public class UsuarioController {
     @PostMapping
     public ResponseEntity<UsuarioResponseDTO> registrarUsuario(@Valid @RequestBody UsuarioRequestDTO dto){
         UsuarioResponseDTO nuevo = usuarioService.agregarUsuario(dto);
+        nuevo.add(linkTo(methodOn(UsuarioController.class).findById(nuevo.getIdUsuario())).withSelfRel());
+        nuevo.add(linkTo(methodOn(UsuarioController.class).obtenerUsuarios()).withRel("todos"));
         return ResponseEntity.status(201).body(nuevo);
     }
 
