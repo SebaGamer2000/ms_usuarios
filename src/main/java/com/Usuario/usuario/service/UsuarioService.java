@@ -99,7 +99,7 @@ public class UsuarioService {
         if (idMembresia == null) return null;
         MembresiaDTO membresiaDTO = webClientBuilder.build()
                 .get()
-                .uri("http://MEMBRESIAS/api/membresias/" + idMembresia)
+                .uri("https://membresia.onrender.com/api/membresias/" + idMembresia)
                 .retrieve()
                 .onStatus(status -> status.is4xxClientError(), response -> Mono.empty())
                 .bodyToMono(MembresiaDTO.class)
@@ -113,7 +113,7 @@ public class UsuarioService {
             log.info("Actualizando socio");
             MembresiaDTO membresiaDTO = webClientBuilder.build()
                     .get()
-                    .uri("http://MEMBRESIAS/api/membresias/" + dto.getIdMembresia())
+                    .uri("https://membresia.onrender.com/api/membresias/" + dto.getIdMembresia())
                     .retrieve()
                     .bodyToMono(MembresiaDTO.class)
                     .block();
